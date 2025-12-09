@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Saya</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* Background Bubbles */
+    .bubbles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .bubbles span {
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      bottom: -50px;
+      border-radius: 50%;
+      animation: bubble 8s infinite;
+    }
+
+    .bubbles span:nth-child(1) { left: 10%; animation-duration: 7s; }
+    .bubbles span:nth-child(2) { left: 20%; animation-duration: 9s; }
+    .bubbles span:nth-child(3) { left: 30%; animation-duration: 6s; }
+    .bubbles span:nth-child(4) { left: 50%; animation-duration: 10s; }
+    .bubbles span:nth-child(5) { left: 70%; animation-duration: 7s; }
+    .bubbles span:nth-child(6) { left: 80%; animation-duration: 11s; }
+    .bubbles span:nth-child(7) { left: 60%; animation-duration: 5s; }
+    .bubbles span:nth-child(8) { left: 40%; animation-duration: 8s; }
+    .bubbles span:nth-child(9) { left: 90%; animation-duration: 6s; }
+    .bubbles span:nth-child(10) { left: 15%; animation-duration: 12s; }
+
+    @keyframes bubble {
+      0% { transform: translateY(0) scale(1); opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-1000px) scale(1.4); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2 class="logo">Portofolio<span>.</span></h2>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BERANDA -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <h1>Halo, Saya <span>augustav brillyan sinduartha</span></h1>
+      <p>Frontend Developer | UI/UX Designer | Creator</p>
+      <a href="#projects" class="btn">Lihat Proyek</a>
+    </div>
+
+    <div class="hero-right">
+      <img src="fotopp.jpeg" alt="Foto Hero" class="hero-img" />
+    </div>
+  </section>
+
+  <!-- TENTANG SAYA -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya Brillyan seorang programmer yang memiliki passion besar dalam dunia
+      teknologi, terutama pada pengembangan aplikasi dan pemrograman web. Saya
+      menguasai berbagai bahasa pemrograman dan menikmati proses membangun sistem
+      mulai dari perencanaan hingga implementasi. Selain itu, saya juga memiliki
+      kemampuan di bidang editing foto maupun video.
+    </p>
+  </section>
+
+  <!-- SKILL -->
+  <section id="skills">
+    <h2>Skill</h2>
+    <div class="skills-list">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">UI/UX</div>
+      <div class="skill-box">Editing</div>
+      <div class="skill-box">Programming</div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="projects">
+    <h2>Project Saya</h2>
+
+    <div class="project-container">
+
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <a href="#" target="_blank">
+          <img src="fotop1.jpg" class="project-img" alt="Project 1" />
+        </a>
+      </div>
+      <p class="project-desc">
+        Deskripsi singkat tentang Project 1: Pengukur jarak adalah alat yang
+        digunakan untuk menentukan jarak antara alat dan suatu objek menggunakan
+        sensor ultrasonik atau inframerah...
+      </p>
+
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <a href="#" target="_blank">
+          <img src="fotop2.jpg" class="project-img" alt="Project 2" />
+        </a>
+      </div>
+      <p class="project-desc">
+        Deskripsi singkat tentang Project 2: Robot Avoider adalah robot otomatis
+        yang dirancang untuk menghindari rintangan secara mandiri...
+      </p>
+
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <a href="#" target="_blank">
+          <img src="fotop3.jpg" class="project-img" alt="Project 3" />
+        </a>
+      </div>
+      <p class="project-desc">
+        Deskripsi singkat tentang Project 3: Smart Home berbasis IoT adalah sistem
+        rumah pintar yang memungkinkan perangkat saling terhubung dan dikendalikan
+        melalui internet...
+      </p>
+
+    </div>
+  </section>
+
+  <!-- BLOG SMART HOME -->
+  <section id="blog" style="padding: 50px; text-align: center;">
+    <h2>Blog: Cara Membuat Prototype Smart Home</h2>
+    <p style="max-width: 800px; margin: auto; font-size: 18px;">
+      Prototype Smart Home adalah model sistem rumah pintar yang dapat
+      dikendalikan otomatis menggunakan sensor, mikrokontroler, dan koneksi internet.
+      Berikut langkah-langkah membuatnya.
+    </p>
+
+    <div style="
+      margin-top: 30px;
+      text-align: left;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(0,0,0,0.05);
+      padding: 25px;
+      border-radius: 12px;
+    ">
+      <h3>1. Siapkan Alat dan Bahan</h3>
+      <ul>
+        <li>Arduino / NodeMCU / ESP8266</li>
+        <li>Sensor Suhu (DHT11/DHT22)</li>
+        <li>Sensor Gerak PIR</li>
+        <li>Relay Module</li>
+        <li>LED atau Lampu Mini</li>
+        <li>Buzzer (opsional)</li>
+        <li>Breadboard & Kabel jumper</li>
+      </ul>
+
+      <h3>2. Buat Blueprint</h3>
+      <p>Tentukan posisi sensor & perangkat.</p>
+
+      <h3>3. Rangkai Elektronik</h3>
+      <p>Hubungkan semua sensor ke mikrokontroler.</p>
+
+      <h3>4. Program Arduino IDE</h3>
+      <ul>
+        <li><code>#include &lt;ESP8266WiFi.h&gt;</code></li>
+        <li><code>#include &lt;DHT.h&gt;</code></li>
+      </ul>
+
+      <h3>5. Uji Sistem</h3>
+      <p>Pastikan semua sensor merespon dengan benar.</p>
+
+      <h3>6. Buat Miniatur Rumah</h3>
+      <p>Gunakan kardus/akrilik sebagai model rumah.</p>
+
+      <h3>7. Integrasi IoT</h3>
+      <ul>
+        <li>Blynk</li>
+        <li>MQTT</li>
+        <li>Firebase</li>
+      </ul>
+
+      <h3>Kesimpulan</h3>
+      <p>Smart Home adalah proyek menarik untuk belajar IoT dan elektronika.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Hubungi saya untuk kerja sama atau proyek lainnya.</p>
+
+    <div class="contact-info">
+      <p><strong>Nama:</strong> Augustav Brillyan Sinduartha</p>
+      <p><strong>Email:</strong>
+        <a href="mailto:augustavartha@gmail.com">augustavartha@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong>
+        <a href="https://wa.me/6285784881324" target="_blank">+62-857-8488-1324</a>
+      </p>
+      <p><strong>Lokasi:</strong> Lumajang, Pasrujambe, Jawa Timur</p>
+    </div>
+
+    <!-- SOSIAL MEDIA (Sudah digabung dengan TikTok) -->
+    <div class="socials">
+      <a href="https://www.instagram.com/_brillyannn?igsh=NGdnZWFib2d2cTNl" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@user98268198037?_r=1&_t=ZS-9241uJxObQN" target="_blank">TikTok</a>
+    </div>
+
+    <!-- Google Maps -->
+    <div class="map-container" style="margin-top: 20px; display: flex; justify-content: center;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d987.4727784261129!2d113.04152317236996!3d-8.112568474603686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6414b9e57adff%3A0xd8f6d8b734f82998!2sEtawa%20Syauqi%20Farm!5e0!3m2!1sen!2sus!4v1764568695955!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <a href="mailto:augustavartha@gmail.com" class="btn">Email Saya</a>
+  </section>
+
+  <footer>
+    <p>© 2025 augustav brillyan sinduartha. All Rights Reserved.</p>
+  </footer>
+
+  <!-- EFFECT GELEMBUNG -->
+  <div class="bubbles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- GAME EDUKASI -->
+  <section id="games" style="padding: 50px; text-align:center;">
+    <h2>Game Edukasi</h2>
+    <p>Pilih game untuk dimainkan:</p>
+
+    <button onclick="showMathGame()" class="btn" style="margin:10px;">Game Matematika</button>
+    <button onclick="showEnglishGame()" class="btn" style="margin:10px;">Game Bahasa Inggris</button>
+
+    <div id="game-area" style="margin-top:30px; font-size:20px;"></div>
+  </section>
+
+  <script>
+    // =============================
+    // GAME MATEMATIKA
+    // =============================
+    function showMathGame() {
+      const a = Math.floor(Math.random() * 20) + 1;
+      const b = Math.floor(Math.random() * 20) + 1;
+
+      document.getElementById("game-area").innerHTML = `
+        <h3>Game Matematika</h3>
+        <p>Berapakah hasil dari: <strong>${a} + ${b}</strong> ?</p>
+        <input id="jawabanMath" type="number" placeholder="Jawaban Anda" style="padding:5px;">
+        <button onclick="cekMath(${a + b})" class="btn" style="margin-left:10px;">Cek Jawaban</button>
+        <p id="hasilMath" style="margin-top:15px; font-weight:bold;"></p>
+      `;
+    }
+
+    function cekMath(kunci) {
+      const jawab = document.getElementById("jawabanMath").value;
+      const result = document.getElementById("hasilMath");
+
+      if (jawab == kunci) {
+        result.innerHTML = "🎉 Benar! Hebat!";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "❌ Salah! Jawaban yang benar adalah " + kunci;
+        result.style.color = "red";
+      }
+    }
+
+    // =============================
+    // GAME BAHASA INGGRIS
+    // =============================
+    const englishWords = [
+      ["cat", "kucing"],
+      ["dog", "anjing"],
+      ["house", "rumah"],
+      ["sun", "matahari"],
+      ["water", "air"],
+      ["book", "buku"]
+    ];
+
+    function showEnglishGame() {
+      const random = englishWords[Math.floor(Math.random() * englishWords.length)];
+
+      document.getElementById("game-area").innerHTML = `
+        <h3>Game Bahasa Inggris</h3>
+        <p>Apa arti dari kata: <strong>${random[0]}</strong> ?</p>
+        <input id="jawabanEng" type="text" placeholder="Jawaban Anda" style="padding:5px;">
+        <button onclick="cekEnglish('${random[1]}')" class="btn" style="margin-left:10px;">Cek Jawaban</button>
+        <p id="hasilEng" style="margin-top:15px; font-weight:bold;"></p>
+      `;
+    }
+
+    function cekEnglish(kunci) {
+      const jawab = document.getElementById("jawabanEng").value.toLowerCase();
+      const result = document.getElementById("hasilEng");
+
+      if (jawab === kunci.toLowerCase()) {
+        result.innerHTML = "🎉 Benar! Keren!";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "❌ Salah! Arti yang benar adalah: " + kunci;
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
